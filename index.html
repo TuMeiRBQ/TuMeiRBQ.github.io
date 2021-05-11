@@ -474,11 +474,10 @@ function random_name(){
     var sur_random = Math.floor( Math.random() * surNameSet.length  );
     var mal_random = Math.floor( Math.random() * malNameSet.length  );
 	var  random_name = surNameSet[sur_random] + malNameSet[mal_random];
-	// var random_name = "LZP";
-    //document.getElementByID("realname").innerHTML = "xixi";
+
     var name = document.getElementById("realname");
-    name.innerHTML = "你好";
-   // name_get.style.display = "none";
+    name.innerHTML = random_name;
+    name_get.style.display = "none";
 	//app.style.display = "block";
     }
 
