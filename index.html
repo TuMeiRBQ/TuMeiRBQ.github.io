@@ -467,8 +467,24 @@ function name_in(){
 	app.style.display = "block";
 	
 }
+function random_name(){
+	 var surNameSet = "王李张刘陈杨黄赵吴周徐孙马朱胡郭何林罗高郑梁谢宋唐许韩邓冯曹彭曾肖田董潘袁蔡蒋余于杜叶程魏苏吕丁任卢姚沈钟姜崔谭陆范汪廖石金韦贾夏付方邹熊白孟秦邱侯江尹薛闫段雷龙黎史陶贺毛郝顾龚邵万覃武钱戴严莫//孔向常";
+    var malNameSet = "伟勇军磊涛斌强鹏杰峰超波辉刚健明亮俊飞凯浩华平鑫毅林洋宇敏宁建兵旭雷锋彬龙翔阳剑东博威海巍晨炜帅岩江松文云力成琦进昊宏欣坤冰锐震楠佳忠庆杨新骏君栋青帆静荣立虎哲晖玮瑞光钢丹坚振晓祥良春晶猛星政智///琪永迪冬琳胜康彪乐诚志维卫睿捷群森洪扬科奇铭航利鸣恒源聪凡颖欢昕武雄洁川清义滨皓达民跃越兴正靖曦璐挺淼泉程韬冲硕远昆瑜晔煜红权征雨野慧萌山丰珂彤悦朋钧彦然枫嘉峥寅烨铮";
+
+    var sur_random = Math.floor( Math.random()*surNameSet.length  );
+    var mal_random = Math.floor( Math.random()*malNameSet.length  );
+	var  random_name = surNameSet[sur_random] + malNameSet[mal_random];
+	// var random_name = "LZP";
+    //document.getElementByID("realname").innerHTML = "xixi";
+    var name = document.getElementById("realname");
+    name.innerHTML = random_name;
+   // name_get.style.display = "none";
+	//app.style.display = "block";
+    }
+
 getTime();
 doMove();
+random_name();
 </script>
 
 
